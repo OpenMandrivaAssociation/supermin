@@ -10,6 +10,7 @@ License: GPL
 BuildRequires: ocaml ocaml-findlib perl(Pod::Html)
 BuildRequires: make
 BuildRequires: pkgconfig(rpm)
+BuildRequires: pkgconfig(ext2fs)
 # Just so autoconf can see what we are
 BuildRequires: rpm dnf cpio tar e2fsprogs xz
 
