@@ -1,0 +1,16 @@
+diff -up supermin-5.1.20/lib/xalloc-oversized.h.omv~ supermin-5.1.20/lib/xalloc-oversized.h
+--- supermin-5.1.20/lib/xalloc-oversized.h.omv~	2019-03-27 16:54:43.781340023 +0100
++++ supermin-5.1.20/lib/xalloc-oversized.h	2019-03-27 16:55:38.720533532 +0100
+@@ -41,10 +41,10 @@ typedef size_t __xalloc_count_type;
+    positive and N must be nonnegative.  This is a macro, not a
+    function, so that it works correctly even when SIZE_MAX < N.  */
+ 
+-#if 7 <= __GNUC__
++#if 7 <= __GNUC__ && !defined(__clang__)
+ # define xalloc_oversized(n, s) \
+    __builtin_mul_overflow_p (n, s, (__xalloc_count_type) 1)
+-#elif 5 <= __GNUC__ && !__STRICT_ANSI__
++#elif 5 <= __GNUC__ && !__STRICT_ANSI__ && !defined(__clang__)
+ # define xalloc_oversized(n, s) \
+    (__builtin_constant_p (n) && __builtin_constant_p (s) \
+     ? __xalloc_oversized (n, s) \
