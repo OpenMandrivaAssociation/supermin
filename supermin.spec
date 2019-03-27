@@ -8,7 +8,7 @@ Summary: Tool for creating and building supermin appliances
 URL: http://libguestfs.org/
 License: GPL
 BuildRequires: ocaml ocaml-findlib perl(Pod::Html)
-BuildRequires: make
+BuildRequires: make glibc-static-devel
 BuildRequires: pkgconfig(rpm)
 BuildRequires: pkgconfig(ext2fs)
 # Just so autoconf can see what we are
