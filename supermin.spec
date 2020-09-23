@@ -1,9 +1,8 @@
 Name: supermin
-Version: 5.1.20
+Version: 5.2.0
 Release: 1
-Source0: http://download.libguestfs.org/supermin/supermin-%{version}.tar.gz
+Source0: http://download.libguestfs.org/supermin/5.2-stable/supermin-%{version}.tar.gz
 Patch0: supermin-5.1.20-clang.patch
-Patch1: supermin-5.1.20-openmandriva.patch
 Summary: Tool for creating and building supermin appliances
 URL: http://libguestfs.org/
 License: GPL
