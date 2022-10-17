@@ -1,5 +1,5 @@
 Name: supermin
-Version: 5.2.0
+Version: 5.2.2
 Release: 1
 Source0: http://download.libguestfs.org/supermin/5.2-stable/supermin-%{version}.tar.gz
 Patch0: supermin-5.1.20-clang.patch
