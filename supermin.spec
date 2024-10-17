@@ -4,7 +4,7 @@ Release: 3
 Source0: http://download.libguestfs.org/supermin/5.2-stable/supermin-%{version}.tar.gz
 Patch0: supermin-5.1.20-clang.patch
 Summary: Tool for creating and building supermin appliances
-URL: http://libguestfs.org/
+URL: https://libguestfs.org/
 License: GPL
 BuildRequires: ocaml ocaml-findlib perl(Pod::Html)
 BuildRequires: make glibc-static-devel
