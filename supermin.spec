@@ -6,6 +6,10 @@ Patch0: supermin-5.1.20-clang.patch
 Summary: Tool for creating and building supermin appliances
 URL: https://libguestfs.org/
 License: GPL
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
 BuildRequires: ocaml ocaml-findlib perl(Pod::Html)
 BuildRequires: make glibc-static-devel
 BuildRequires: pkgconfig(rpm)
